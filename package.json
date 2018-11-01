@@ -1,0 +1,36 @@
+
+{
+  "name": "date-locale-example",
+  "productName": "date-locale-example",
+  "version": "0.0.0",
+  "description": "example of locale date string",
+  "repository": {
+    "url": "ninbryan/date-locale-example",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "poi build",
+    "deploy": "NODE_ENV=production && npm run build && surge dist date-locale-example.surge.sh",
+    "dev": "NODE_ENV=development && poi"
+  },
+  "author": "ninbryan <ninjabryan@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-react-require": "^3.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-react-app": "^3.0.0",
+    "offline-plugin": "^4.9.0",
+    "poi": "^9.6.10",
+    "poi-preset-eslint-react": "^1.0.3",
+    "poi-preset-offline": "^9.0.3",
+    "react-hot-loader": "^3.1.3",
+    "surge": "^0.20.1"
+  },
+  "dependencies": {
+    "@reactions/component": "^2.0.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-flex-columns": "^0.3.1",
+    "react-json-view": "^1.19.1"
+  }
+}
